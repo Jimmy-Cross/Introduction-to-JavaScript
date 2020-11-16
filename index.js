@@ -128,8 +128,45 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight_lbs, age){
+    
+    if (age >1)
+    {
+      if (weight_lbs >= 5)
+      {
+        return weight_lbs * 0.5;
+      }
+      else if (weight_lbs >= 6)
+      {
+        return weight_lbs * 0.4;
+      }
+      else if (weight_lbs >= 11)
+      {
+        return weight_lbs * 0.3;
+      }
+      else { return weight_lbs * 0.15;}
+      
+    }
+    else
+    {
+      if (age >= 4)
+      {
+        console.log("Feed your puppy 10 percent of it's weight!");
+        return weight_lbs * 0.10;
+      }
+      else if (age >= 7)
+      {
+        console.log ("Feed your pupply 5% of its weight!");
+        return weight_lbs *  0.5;
+      }
+      else 
+      {
+        console.log("Feed your puppy 4 percent of it's weight!");
+        return weight_lbs / 0.4;
+      }
+    }
+
+
   }
 
 
