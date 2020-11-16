@@ -18,6 +18,15 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
+let allowedToVote = false;
+
+if (votingAge >= 18) { 
+
+  console.log("Voting age is greater than or equal to 18!");
+  allowedToVote = true;
+}
+
 
 
 /*
@@ -30,6 +39,13 @@ Do the following:
 
    HINT: no function required
 */
+
+let var1 = 1;
+let var2 = 2;
+
+var1 = var2;
+
+console.log(var1);
 
 
 
@@ -47,6 +63,11 @@ Do the following:
 */
 
 
+let myString = "1999";
+
+let myInteger = parseInt(myString);
+
+console.log(myInteger);
 
 
 /*
@@ -58,8 +79,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(num1, num2)){
+    return num1 * num2;
   }
 
 
@@ -74,8 +95,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+   return age * 7;
 }
 
 
@@ -148,10 +169,11 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
-  } 
+// Divide by 8 then multiply by 5
+function miles(kiloMeters)
+{
+  return kiloMeters / 8 * 5;   
+} 
 
 
 
