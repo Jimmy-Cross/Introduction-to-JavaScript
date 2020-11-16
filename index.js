@@ -189,9 +189,85 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
+let computer = Math.floor(Math.random() * 3) + 1; 
+
 
 function game(user, computer){
-    /*add your code here*/
+
+  // Rock 1
+  // Paper 2
+  // Scissors = 3
+  
+  let computerChose = 0;
+  let userChose = 0;
+
+  let choice = parseInt(computer);
+
+  if (choice == 1 )
+  {
+    computerChose = 1;
+  }
+  else if (choice == 2 )
+  {
+    computerChose = 2;
+  }
+  else
+  {
+    computerChose = 3;
+  }
+
+  if (user == 1)
+  {
+    userChose = 1;
+  }
+  else if (user == 2)
+  {
+    userChose =  2;
+  }
+  else 
+  {
+    userChose = 3;
+  }
+
+
+  if (userChose == computerChose)
+  {
+    console.log("It was a tie"); 
+    return;
+  }
+
+  if (computerChose == 1) // Computer Chose Rock
+  { 
+    if (userChose == 2)
+    {
+      console.log("You win!");
+    }
+    else console.log("You lose!");
+
+  }
+  else if (computerChose == 2) // Computer chose paper
+  {
+    if (userChose == 3)
+    {
+      console.log("You win!");
+    }
+    else console.log("You lose!");
+
+
+  }
+  else  // computer Chose scissors
+  {
+    if (userChose == 1)
+    {
+      console.log("You win!");
+    }
+    else console.log("You lose!");
+
+  }
+
+
+
+
 }
   
   
